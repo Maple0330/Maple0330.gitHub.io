@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.ttf') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background-color: #fcf8ef;
+}
+.carousel{
+	width: 80vw;
+	height: 45vh;
+	margin: 0 auto;
+	margin-top: 5vh;
+	padding-top: 5vh;
+}
+.carousel-imgBox{
+	width: 50vw;
+	height: 50vw;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+
+}
+.carousel-img{
+	width: 300vw;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	box-sizing: border-box;
+}
+.carousel-imgBox img{
+	width: 50vw;
+	height: 50vw;
+	display: inline-block;
+	margin: 0 auto;
+}
+.carousel-textBox{
+	width: 50vw;
+	height: 10vh;
+	margin: 0 auto;
+	margin-top: 5vh;
+	position: relative;
+	overflow: hidden;
+}
+.carousel-text{
+	width: 300vw;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+}
+.carousel-text span{
+	width: 50vw;
+	height: 10vh;
+	display: inline-block;
+	margin: 0 auto;
+	font-size: 10vw;
+	text-align: center;
+	line-height: 20vw;
+	color: #716e65;
+}
+
+.carousel-botton{
+	width: 80vw;
+	margin: auto;
+	display: flex;
+}
+.leftBtn,
+.rightBtn{
+	font-size: 10vw !important; 
+	line-height: 20vh;
+	color: #bbada0 !important;
+}
+.options{
+	width: 80vw;
+	height: 30vh;
+	margin: 0 auto;
+}
+.options div{
+	width: 40vw;
+	height: 8vh;
+	margin: 0 auto;
+	margin-top: 5vh;
+	text-align: center;
+	line-height: 8vh;
+	border-radius: 2vw;
+	font-size: 5vw;
+	color: #fcf8ef;
+	background-color: #f29f77;
+}
+.options .setUp,
+.options .rule{
+	background-color: #bbada0;
+}
