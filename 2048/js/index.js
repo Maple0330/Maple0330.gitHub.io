@@ -31,6 +31,7 @@ $(function(){
 			moveEndY = e.targetTouches[0].pageY;
 			X = moveEndX - startX;
 			Y = moveEndY - startY;
+			e.preventDefault();
 		})
 		// 手指离开 进行判断
 		body.addEventListener('touchend',function(e){ 
@@ -192,8 +193,7 @@ $(function(){
 		return true;
 	}
 	// 向下移动
-	function moveDown(e){
-		e.preventDefault();
+	function moveDown(){
 		if(!canMoveDown(board)){ // 根据返回值判断是否能向左移动
 			return false;
 		}
