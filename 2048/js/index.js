@@ -9,9 +9,6 @@ $(function(){
 	wAndH = wh(index) // 先获取到格子大小
 	var hasConflicted = new Array(); // 核对，避免多次添加
 
-	document.addEventListener('touchmove', e => {
-   e.preventDefalut();
-}, {passive: false})
 	newgame(); // 开始游戏
 
 	function newgame(){  // 开始游戏
@@ -195,11 +192,12 @@ $(function(){
 		return true;
 	}
 	// 向下移动
-	function moveDown(){
+	function moveDown(e){
+		e.preventDefault();
 		if(!canMoveDown(board)){ // 根据返回值判断是否能向左移动
 			return false;
 		}
-
+	
 		// moveUp
 		for(var j = 0; j < index; j++){
 			for(var i = 2; i >= 0; i--){
