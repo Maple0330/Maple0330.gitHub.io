@@ -9,7 +9,9 @@ $(function(){
 	wAndH = wh(index) // 先获取到格子大小
 	var hasConflicted = new Array(); // 核对，避免多次添加
 
-
+	document.addEventListener('touchmove', e => {
+   e.preventDefalut();
+}, {passive: false})
 	newgame(); // 开始游戏
 
 	function newgame(){  // 开始游戏
