@@ -5,9 +5,11 @@ $(function(){
 	var body = document.querySelector('body');
 	var index = window.location.search; // 获取用户选择的棋盘格式
 	index = index.slice(1,2);
+	var boxMap = document.querySelector('.box-map');
 	var wAndH = 0; // 格子大小
 	wAndH = wh(index) // 先获取到格子大小
 	var hasConflicted = new Array(); // 核对，避免多次添加
+
 
 	newgame(); // 开始游戏
 
@@ -20,21 +22,20 @@ $(function(){
 
 		var startX, startY,moveEndX,moveEndY,X,Y; // 判断移动方向的变量
 		// 手指按下
-		body.addEventListener('touchstart', function(e) {
+		boxMap.addEventListener('touchstart', function(e) {
 			// 获取手指初始坐标
 			startX = e.targetTouches[0].pageX;
 			startY = e.targetTouches[0].pageY;
 		})
 		// 手指移动
-		body.addEventListener('touchmove',function(e){
+		boxMap.addEventListener('touchmove',function(e){
 			moveEndX = e.targetTouches[0].pageX;
 			moveEndY = e.targetTouches[0].pageY;
 			X = moveEndX - startX;
 			Y = moveEndY - startY;
-			e.preventDefault();
 		})
 		// 手指离开 进行判断
-		body.addEventListener('touchend',function(e){ 
+		boxMap.addEventListener('touchend',function(e){ 
 			if( Math.abs(X) > Math.abs(Y) && X > 0 ) {// right
 				console.log('向右');
 				if(moveRight()){ // 给个返回值 判断能不能移动
@@ -197,7 +198,7 @@ $(function(){
 		if(!canMoveDown(board)){ // 根据返回值判断是否能向左移动
 			return false;
 		}
-	
+
 		// moveUp
 		for(var j = 0; j < index; j++){
 			for(var i = 2; i >= 0; i--){
