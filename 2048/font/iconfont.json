@@ -1,0 +1,79 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1029",
+      "name": "音乐",
+      "font_class": "yinle",
+      "unicode": "f0064",
+      "unicode_decimal": 983140
+    },
+    {
+      "icon_id": "147464",
+      "name": "游戏_填充",
+      "font_class": "youxitianchong",
+      "unicode": "e6b5",
+      "unicode_decimal": 59061
+    },
+    {
+      "icon_id": "688061",
+      "name": "撤销 返回 撤回 上一步",
+      "font_class": "chexiaofanhuichehuishangyibu",
+      "unicode": "e76b",
+      "unicode_decimal": 59243
+    },
+    {
+      "icon_id": "5387549",
+      "name": "刷新",
+      "font_class": "shuaxin",
+      "unicode": "eafd",
+      "unicode_decimal": 60157
+    },
+    {
+      "icon_id": "6129178",
+      "name": "138设置、系统设置、功能设置、属性",
+      "font_class": "shezhixitongshezhigongnengshezhishuxing",
+      "unicode": "e795",
+      "unicode_decimal": 59285
+    },
+    {
+      "icon_id": "6776437",
+      "name": "声音静音",
+      "font_class": "shengyinjingyin",
+      "unicode": "eca9",
+      "unicode_decimal": 60585
+    },
+    {
+      "icon_id": "10691034",
+      "name": "规则",
+      "font_class": "guize",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "11372700",
+      "name": "声音",
+      "font_class": "shengyin",
+      "unicode": "e8b8",
+      "unicode_decimal": 59576
+    },
+    {
+      "icon_id": "26847399",
+      "name": "后退面性",
+      "font_class": "houtuimianxing",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "26847402",
+      "name": "前进面性",
+      "font_class": "qianjinmianxing",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    }
+  ]
+}

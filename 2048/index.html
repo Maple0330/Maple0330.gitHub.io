@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>2048</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/initialization.css">
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body>
+	<!-- 头部 -->
+	<div class="header clearfix">
+		<div class="logo fl">2048</div>
+		<div class="fr clearfix">
+			<div class="fraction fl">
+				<div>分数</div>
+				<span id="score">0</span>
+			</div>
+			<div class="maxFraction fr">
+				<div>最高分</div>
+				<span id="scoreMax">0</span>
+			</div>
+		</div>
+	</div>
+	<!-- 游戏棋盘 -->
+	<div class="box-map">
+		<!-- 结束模板 -->
+		<div class="endTemplate">
+			游戏结束
+		</div>
+	</div>
+	<!-- 功能 : 上一步 当前步数 重新开始 -->
+	<div class="features">
+		<div class="regret iconfont">&#xe76b;</div>
+		<div class="sound step iconfont">&#xeca9;</div>
+		<div class="restart iconfont">&#xeafd;</div>
+	</div>
+	<!-- 3个音频文件 -->
+	<audio id="backgroundMusic" src="audio/backgroundMusic.wav"></audio>
+	<audio id="spit" src="audio/spit.wav"></audio>
+	<audio id="over" src="audio/over.wav"></audio>
+</body>
+</html>

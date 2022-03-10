@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>开始游戏</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="./css/initialization.css">
+	<link rel="stylesheet" href="./css/game.css">
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/game.js"></script>
+</head>
+<body>
+	<!-- 关卡选择 -->
+	<div class="carousel">
+		<div class="carousel-imgBox">
+			<div class="carousel-img">
+				<img src="./images/4x4.png" alt="">
+				<img src="./images/4x4.png" alt="">
+				<img src="./images/4x4.png" alt="">
+				<!-- <img src="./images/3x3.png" alt=""> -->
+			</div>
+		</div>
+		<div class="carousel-botton">
+			<div class="leftBtn iconfont">&#xe650;</div>
+			<div class="carousel-textBox">
+				<div class="carousel-text">
+					<!-- <span>-3&times;3NO</span> -->
+					<span>经典4&times;4</span>
+					<span>无尽4&times;4</span>
+					<span>经典4&times;4</span>
+
+				</div>
+			</div>
+			<div class="rightBtn iconfont">&#xe651;</div>
+		</div>
+	</div>
+<!-- 游戏选项 -->
+	<div class="options">
+		<div class="start iconfont">&#xe6b5;&nbsp;  开始游戏</div>
+		<div class="rule iconfont">&#xe60e;&nbsp;  游戏规则</div>
+		<div class="setUp iconfont">&#xe795;&nbsp;  游戏设置</div>
+	</div>
+	<div class="rulesPopup">
+			游戏的规则<br>
+		你需要控制所有方块向同一个方向运动,两个相同数字方块撞在一起之后合并成为他们的和,每次操作之后会随机生成一个2或者4,最终得到一个“2048”的方块就算胜利了。<br>
+		游戏模式<br>
+		经典是方块合成了2048游戏胜利,<br>
+		无尽则合成没有上限,看游戏能力。
+		<hr style="background-color:	#DEB887;">
+		点击继续游戏
+	</div>
+
+
+	<!-- <button id="3x3"></button>
+	<script>
+		var btn = document.querySelector('button');
+		btn.onclick = function(){
+			var id = this.id;
+			console.log(id);
+			window.location.href = "index.html?id="+id;
+		}
+	</script> -->
+</body>
+</html>
